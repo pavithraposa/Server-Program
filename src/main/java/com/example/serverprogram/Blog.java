@@ -6,7 +6,6 @@ public class Blog {
     private String description;
     private String author;
 
-
     public String getTitle() {
         return title;
     }

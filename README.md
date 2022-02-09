@@ -28,18 +28,18 @@
     - [x]  / api / v1 / blog / create - Add a new post
 - [x]  More may be added if you feel the need for it
 - [x]  Each request must use an appropriate HTTP method (GET, POST, DELETE)
-- [ ]  Your code must be saved in version control with Git
+- [x]  Your code must be saved in version control with Git
 ###Client components:
-- [ ] The client component must be a text-based interface (CLI)
-- [ ] The user should be able to list / add / edit / delete blog posts via API requests to the server component
+- [x] The client component must be a text-based interface (CLI)
+- [x] The user should be able to list / add / edit / delete blog posts via API requests to the server component
 - [x]  The user must be able to list all posts (ID and title are displayed)
 - [x]  The user should be able to request a specific post and read the content
 - [x]  No information should be stored in the client
-- [ ]  If the user tries to view, delete, edit or change a post that does not
+- [x]  If the user tries to view, delete, edit or change a post that does not
   there should be a clear error message displayed
 - [ ]  Your code must be saved in version control with Git
 ###Level up (optional challenges that do not affect the grade, do one or more of these):
-- [ ]  You can save all the information in the server in files and recover from these files when
+- [x]  You can save all the information in the server in files and recover from these files when
   the server starts, so that no information is lost when the server restarts.
 - [ ] Use NASA's API (https://api.nasa.gov/) from the server ,add a menu option to the client called "Get today's image from NASA", whereupon our client connects to
   our server which in turn connects to NASA's API. Our server then forwards
@@ -47,8 +47,8 @@
 - -----
 #Checklist: Functionality for Well Pass
 
-- [ ] You should use Dependency Injection
-- [ ] You should create a Docker file and write instructions on how to use the server component
+- [x] You should use Dependency Injection
+- [x] You should create a Docker file and write instructions on how to use the server component
   can be started as a Docker container, and the client component must be able to connect
   to the server component.
-- [ ] You should use logging with SLF4J and log all API calls
+- [x] You should use logging with SLF4J and log all API calls
