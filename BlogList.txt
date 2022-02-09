@@ -1,0 +1,3 @@
+1|Trip to Gothenburg|places to visit are 'Universium','Slottsskogen'|Pavithra
+2|Trip to Gothenburg|places to visit are 'Universium','Slottsskogen'|Pavithra
+3|Trip to Gothenburg|places to visit are 'Universium','Slottsskogen'|Pavithra

@@ -60,8 +60,12 @@ public class BlogService  {
     public void exitProgram() throws IOException {
         //Creates a FileWriter
         new FileWriter(blogListFile);
-        for (Blog blogArray : blogs) {
-            if (blogs.size() != 0) {
+        int fileId=0;
+
+        if (blogs.size() != 0) {
+            for (Blog blogArray : blogs) {
+                ++fileId;
+                blogArray.setId(fileId);
                 String outPutText = blogArray.getId() + "|" + blogArray.getTitle() + "|" + blogArray.getDescription() + "|" + blogArray.getAuthor() + "\n";
                 saveToFile(blogListFile.getName(), outPutText, true);
             }
@@ -88,13 +92,14 @@ public class BlogService  {
             while (myScanner.hasNextLine()) {
                 String line = myScanner.nextLine();
                 String[] items = line.split("\\|");
+
                 int blogId = Integer.parseInt(items[0]);
                 String blogTitle = items[1];
                 String blogDescription = items[2];
                 String blogAuthor = items[3];
 
                 Blog newObject = new Blog();
-
+                blogId++;
                 newObject.setId(blogId);
                 newObject.setTitle(blogTitle);
                 newObject.setDescription(blogDescription);
